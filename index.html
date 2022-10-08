@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="quizz.js" defer></script>
+  </head>
+
+  <body>
+      <div class="quizzes">
+        <div class="quizzes-header">
+          <h1 id="title">Quiz title</h1>
+        </div>
+        <div class="quizzes-body">
+          <div>
+            <h3>Questions: <span id="nb_questions">0</span></h3>
+          </div>
+          <div>
+            <h3>Score: <span id="quiz_score">0</span></h3>
+          </div>
+        </div>
+        <button id="open_quiz">Try this quiz</button>
+      </div>
+      
+      <div class="modal" id="modal">
+
+        <div class="quiz-container" id="quiz">
+          <span class="closeBtn" id="close">&times;</span>
+          <div class="quiz-title">
+            <h1 id="quiz-title">Header</h1>
+          </div>
+          <div class="quiz-header" id="quiz-content">
+            <h2 id="question">Question text</h2>
+            <ul>
+              <li>
+                <input type="radio" id="a" name="answer" class="answer" />
+                <label id="a_text" for="a">Answer A</label>
+              </li>
+              <li>
+                <input type="radio" id="b" name="answer" class="answer" />
+                <label id="b_text" for="b">Answer B</label>
+              </li>
+              <li>
+                <input type="radio" id="c" name="answer" class="answer" />
+                <label id="c_text" for="c">Answer C</label>
+              </li>
+              <li>
+                <input type="radio" id="d" name="answer" class="answer" />
+                <label id="d_text" for="d">Answer D</label>
+              </li>
+            </ul>
+          </div>
+          <div id="quiz-content-alternative">
+
+          </div>
+          <div class="text-center">
+            <p id="date" class="text-hint">Date:</p>
+          </div>
+          <button id="submit">Submit</button>
+        </div>
+      </div>
+  </body>
+</html>

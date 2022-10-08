@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #b8c6db;
+    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 100%);
+    align-items: flex-start;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    gap: 50px;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.quizzes {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 10px;
+    min-width: 20%;
+    max-width: 20%;
+}
+
+.quizzes-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.quizzes-body > div {
+    padding: 30px 20px;
+}
+
+.quizzes-body > div:last-child {
+    align-self: flex-end;
+}
+
+.modal {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000A0;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.quiz-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+    overflow: hidden;
+    width: 600px;
+    max-width: 100%;
+}
+
+.quiz-header {
+    padding: 2rem;
+}
+
+#quiz-content-alternative {
+    display: none;
+    padding: 30px;
+}
+
+h1 {
+    background-color: #8e44ad;
+    padding-block: 0.67em;
+    margin: 0;
+    text-align: center;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+h2 {
+    padding: 1rem;
+    text-align: center;
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+ul li label {
+    cursor: pointer;
+}
+
+button {
+    background-color: #8e44ad;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-family: inherit;
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 1.3rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+button:hover {
+    background-color: #732d91;
+}
+
+button:active {
+    background-color: #5e3370;
+    outline: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* The timer css */
+
+.timer__container {
+    display: flex;
+    border: 2px solid #ddd;
+    border-radius: 9px;
+    width: auto;
+    margin: 1rem 2rem;
+}
+
+#progressBar {
+    background-color: #732d91;
+    height: 10px;
+    width: 0%;
+    display: block;
+    border-radius: 10px;
+}
+
+/* The Close Button */
+.closeBtn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.closeBtn:hover,
+.closeBtn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.text-hint {
+    font-size: 0.8rem;
+    color: #bbb;
+}
