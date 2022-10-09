@@ -15,8 +15,8 @@ By solving this project, you will learn :
 
 Starting with the code supplied. First read the code thoroughly, then follow these steps in order to finish the project :
 - Add a timer for the whole quiz and disable inputs after time elapsed.
-- Change some colors to red when timer reaches 0.
-- Add a reset button to reset the quiz (ex: reset colors from red to default - reset timer - reset score ...)
+    * Change some colors to red when timer reaches 0.
+    * Add a reset button to reset the quiz (ex: reset colors from red to default - reset timer - reset score ...)
 - Add a form to accept new questions.
     <!-- // hint: create new input => grab the value => push it to the array of questions => load quiz again -->
 - Provide multiple quizzes that can be solved and track the overall score of all the quizzes.
